@@ -302,7 +302,7 @@ Possible improvements for production use:
 
 ## 👨‍💻 Author
 
-Created as a sample task for Freelance Java Developer position.
+suyash gade
 
 ## 📄 License
 
