@@ -1,12 +1,12 @@
 package com.example.movieapi.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Root controller to provide API information at the base URL
@@ -23,9 +23,9 @@ public class RootController {
         response.put("status", "running");
         
         Map<String, String> endpoints = new HashMap<>();
-        endpoints.put("Get All Movies", "GET http://localhost:8080/api/movies");
-        endpoints.put("Get Movie by ID", "GET http://localhost:8080/api/movies/{id}");
-        endpoints.put("Add New Movie", "POST http://localhost:8080/api/movies");
+        endpoints.put("Get All Movies", "GET https://movieapi-production-0b0d.up.railway.app/api/movies");
+        endpoints.put("Get Movie by ID", "GET https://movieapi-production-0b0d.up.railway.app/api/movies/{id}");
+        endpoints.put("Add New Movie", "POST https://movieapi-production-0b0d.up.railway.app/api/movies");
         
         response.put("endpoints", endpoints);
         
