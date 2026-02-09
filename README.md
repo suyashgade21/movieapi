@@ -60,12 +60,14 @@ movie-api/
 
 2. **Build the project:**
    ```bash
-   mvn clean install
+   ./mvnw clean install -DskipTests
+
    ```
 
 3. **Run the application:**
    ```bash
-   mvn spring-boot:run
+   ./mvnw spring-boot:run
+
    ```
    
    Or run the JAR directly:
