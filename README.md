@@ -77,18 +77,18 @@ movie-api/
 
 4. **The application will start on port 8080:**
    ```
-   Server running at: http://localhost:8080
+   Server running at: https://movieapi-production-0b0d.up.railway.app/
    ```
 
 ## 📡 API Endpoints
 
 ### Base URL
 ```
-http://localhost:8080/api/movies
+https://movieapi-production-0b0d.up.railway.app/api/movies
 ```
 
 ### 1. Add a New Movie
-**Endpoint:** `POST /api/movies`
+**Endpoint:** `POST https://movieapi-production-0b0d.up.railway.app/api/movies`
 
 **Description:** Adds a new movie to the collection
 
@@ -130,7 +130,7 @@ http://localhost:8080/api/movies
 
 **cURL Example:**
 ```bash
-curl -X POST http://localhost:8080/api/movies \
+curl -X POST https://movieapi-production-0b0d.up.railway.app/api/movies \
   -H "Content-Type: application/json" \
   -d '{
     "name": "The Dark Knight",
@@ -144,7 +144,7 @@ curl -X POST http://localhost:8080/api/movies \
 ---
 
 ### 2. Get a Movie by ID
-**Endpoint:** `GET /api/movies/{id}`
+**Endpoint:** `GET https://movieapi-production-0b0d.up.railway.app/api/movies/{id}`
 
 **Description:** Retrieves a specific movie by its ID
 
@@ -167,13 +167,13 @@ curl -X POST http://localhost:8080/api/movies \
 
 **cURL Example:**
 ```bash
-curl http://localhost:8080/api/movies/1
+curl https://movieapi-production-0b0d.up.railway.app/1
 ```
 
 ---
 
 ### 3. Get All Movies (Bonus)
-**Endpoint:** `GET /api/movies`
+**Endpoint:** `GET https://movieapi-production-0b0d.up.railway.app/api/movies`
 
 **Description:** Retrieves all movies in the collection
 
@@ -201,7 +201,7 @@ curl http://localhost:8080/api/movies/1
 
 **cURL Example:**
 ```bash
-curl http://localhost:8080/api/movies
+curl https://movieapi-production-0b0d.up.railway.app/api/movies
 ```
 
 ## ✅ Input Validation
@@ -224,7 +224,7 @@ If validation fails, the API returns a `400 Bad Request` response with detailed 
 
 ```bash
 # Add a new movie
-curl -X POST http://localhost:8080/api/movies \
+curl -X POST https://movieapi-production-0b0d.up.railway.app/api/movies \
   -H "Content-Type: application/json" \
   -d '{
     "name": "Interstellar",
@@ -235,10 +235,10 @@ curl -X POST http://localhost:8080/api/movies \
   }'
 
 # Get movie by ID
-curl http://localhost:8080/api/movies/1
+curl https://movieapi-production-0b0d.up.railway.app/api/movies/1
 
 # Get all movies
-curl http://localhost:8080/api/movies
+curl https://movieapi-production-0b0d.up.railway.app/api/movies
 ```
 
 ### Using Postman or Similar Tools
